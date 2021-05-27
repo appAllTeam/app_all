@@ -1,10 +1,15 @@
 import React from 'react';
+<<<<<<< HEAD
 import { KeyboardAvoidingView, Image, TextInput, TouchableOpacity, Text, StyleSheet, View} from 'react-native';
+=======
+import { StatusBar, Image, TextInput, TouchableOpacity, Text, StyleSheet} from 'react-native';
+>>>>>>> 9a347bca
 import { SafeAreaView} from 'react-native-safe-area-context';
 
 export default function Login() {
  return (
   <SafeAreaView style={styles.container}>
+<<<<<<< HEAD
     <SafeAreaView style={styles.containerLogo}>
         <Image
            source={require('../assets/iconeAll2.png')}
@@ -16,12 +21,21 @@ export default function Login() {
 
 
     <SafeAreaView style={styles.inputs}>
+=======
+      <StatusBar/>
+
+        <Image source={require('../assets/iconeAll2.png')} />      
+>>>>>>> 9a347bca
         <TextInput
             style={styles.input}
             placeholder="Email"
             autoCorrect={false}
             onChangeText={()=> {}}
         />
+<<<<<<< HEAD
+=======
+        
+>>>>>>> 9a347bca
         <TextInput
             style={styles.input}
             placeholder="Senha"
@@ -29,6 +43,7 @@ export default function Login() {
             onChangeText={()=>{}}
             secureTextEntry={true}
         />
+<<<<<<< HEAD
     </SafeAreaView>
         <TouchableOpacity style={styles.btnSubmit}>
             <Text style={styles.submitText}>Acessar</Text>
@@ -42,6 +57,21 @@ export default function Login() {
             <Text style={styles.btnText}>Recuperar senha</Text> 
     </TouchableOpacity>
     </SafeAreaView>
+=======
+
+        <TouchableOpacity>
+            <Text style={styles.submitText}>Acessar</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity>
+            <Text style={styles.btnText}>Criar conta gratuita</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity >
+            <Text style={styles.btnText}>Recuperar senha</Text> 
+    </TouchableOpacity>
+
+>>>>>>> 9a347bca
 </SafeAreaView>
  );
 }
@@ -54,6 +84,7 @@ container:{
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#000000',
+<<<<<<< HEAD
     paddingTop: 5,
     paddingBottom: 50
 },
@@ -113,4 +144,47 @@ btnText:{
      paddingBottom: 20,
      marginTop: 0
  },
+=======
+    padding: 30,
+    paddingTop: 100
+},
+
+tituloText:{
+    color: '#fff',
+    fontSize: 28,
+    textAlign: 'center'
+},
+
+input:{
+    backgroundColor: '#fff',
+    color: '#000000',
+    width: '90%',
+    borderRadius: 10,
+    padding: 10,
+    marginTop: 10
+},
+
+submitText:{
+    backgroundColor: '#229ce3',
+    color: '#fff',
+    borderRadius: 10,
+    padding: 10,
+    marginTop: 10,
+    width: 200,
+    textAlign: 'center',
+    fontSize: 18
+},
+
+btnText:{
+    color: '#fff',
+    borderRadius: 10,
+    padding: 10,
+    marginTop: 10,
+    width: 150,
+    textAlign: 'center',
+    fontSize: 14
+}, 
+
+
+>>>>>>> 9a347bca
 });

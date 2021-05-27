@@ -1,5 +1,9 @@
 import React from 'react';
+<<<<<<< HEAD
 import { Text, View, StyleSheet, Image, TouchableOpacity} from 'react-native';
+=======
+import { Text, View, StyleSheet, Image, TouchableOpacity, StatusBar} from 'react-native';
+>>>>>>> 9a347bca
 import { SafeAreaView }  from 'react-native-safe-area-context';
 
 import  {useFonts, Itim_400Regular } from '@expo-google-fonts/itim';
@@ -19,6 +23,10 @@ export function Welcome(){
 
 return(
         <SafeAreaView style={styles.container}>
+<<<<<<< HEAD
+=======
+            <StatusBar/>
+>>>>>>> 9a347bca
             <Image source={require('../assets/iconeAll2.png')} />
 
             <Text style={styles.textoInicio}>
